@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <style>
+      
+      .button {
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration:lightblue;
+        display:table-column-group;
+        animation-duration: 2ms;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      #input{
+        color:white
+      }
+      .pipe{
+        width: 100%;
+        position:absolute;
+        text-align: center;
+       flex-direction: column; 
+        height: 56px;
+        top: 0;
+        left: 0;
+      }
+     
+      
+      .button1 {background-color: #4CAF50;} /* Green */
+      .button2 {background-color: #008CBA;} 
+      .button3 {background-color:rebeccapurple;} 
+      .button4 {background-color:rgb(223, 17, 68);}/* Blue */
+      </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <title>HomeWork Ajax</title>
+  </head>
+  
+  
+  <body >
+    <img  width="150%"  src="http://www.correntescriativas.pt/wp-content/uploads/2018/04/img_fundo_contactos_website_01.jpg">
+    <div  class="pipe">
+      
+      <h2> Ver Amigos</h2>
+      <button  class="button button1" id='boton'>Ver Amigos</button>
+      <ul  id='lista'>
+      </ul>
+      
+      
+      <!-- <input id='input' ></input> -->
+      <form name="calculator">
+      <input  name="input" value=""></input>
+      <input class="button4" type="button" value="1" onClick="document.calculator.input.value+='1'">
+    <input class="button4" type="button" value="2" onClick="document.calculator.input.value+='2'">
+    <input class="button4" type="button" value="3" onClick="document.calculator.input.value+='3'">
+    <input class="button4" type="button" value="4" onClick="document.calculator.input.value+='4'">
+    <input class="button4" type="button" value="5" onClick="document.calculator.input.value+='5'">
+    <input class="button4" type="button" value="6" onClick="document.calculator.input.value+='6'">
+    <input class="button4" type="button" value="7" onClick="document.calculator.input.value+='7'">
+    <input class="button4" type="button" value="8" onClick="document.calculator.input.value+='8'">
+    <input class="button4" type="button" value="9" onClick="document.calculator.input.value+='9'">
+    <input class="button4" type="reset" value="X">
+  </form>
+      <button class="button button2"  id='search'>Buscar</button>
+      <span id='amigo'></span>
+      
+      
+      
+      <button class="button button3"  id='delete'>Delete</button>
+      <span id='success'></span>
+      <script src="index.js"></script>
+      
+    </div>
+    </body>
+</html>
